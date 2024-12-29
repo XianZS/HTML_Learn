@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>css选择器</title>
+    <style>
+        h2 {
+            /* 元素选择器 */
+            color: aqua;
+        }
+
+        .h3_1 {
+            /*类选择器-1*/
+            color: red;
+        }
+
+        .h3_2 {
+            /*类选择器-2*/
+            color: blue;
+        }
+
+        #h3_3 {
+            /*id选择器*/
+            color: green;
+        }
+
+        * {
+            /*通用选择器*/
+            font-family: 'FandolKai';
+        }
+
+        .father > .son {
+            /*子元素选择器*/
+            /*子元素选择器只对儿子生效*/
+            color: #ff0081;
+        }
+
+        .father2 p {
+            /*后代选择器*/
+            /*后代选择器对其所包含的所有子代都生效*/
+            color: red;
+        }
+    </style>
+</head>
+<body>
+<h1>
+    不同类型的css选择器
+</h1>
+<h2>
+    这是一个元素选择器示例
+</h2>
+<h3 class="h3_1">
+    这是一个类选择器示例-1，以“.”开头
+</h3>
+<h3 class="h3_2">
+    这是一个类选择器示例-2，以“.”开头
+</h3>
+<h3 id="h3_3">
+    这是一个ID选择器示例，以“#”开头
+</h3>
+<div class="father">
+    <p class="son">这是一个子元素选择器</p>
+    <div>
+        <p>这是一个子元素选择器</p>
+    </div>
+</div>
+<div class="father2">
+    <p>这是一个后代选择器 儿子</p>
+    <div>
+        <p>这是一个后代选择器 孙子</p>
+    </div>
+</div>
+</body>
+</html>

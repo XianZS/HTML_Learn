@@ -1,0 +1,37 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>定位布局</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+        }
+        /* 定义一个类选择器，用于设置固定定位的盒子样式 */
+        .box-fixed {
+            /* 盒子的边框为 1 像素宽的红色实线 */
+            border: 1px solid red;
+            /* 盒子的背景颜色为红色 */
+            background-color: red;
+            /* 盒子的高度为 100 像素 */
+            height: 100px;
+            /* 盒子的宽度为 100 像素 */
+            width: 100px;
+            /* 盒子的定位方式为固定定位 */
+            position: fixed;
+            /* 盒子距离页面右侧 0 像素 */
+            right: 0;
+            /* 盒子距离页面顶部 300 像素 */
+            top: 300px;
+        }
+
+    </style>
+</head>
+<body>
+    <div class="box-fixed">
+        xxx
+    </div>
+</body>
+</html>

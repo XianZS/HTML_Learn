@@ -4,18 +4,49 @@
     <meta charset="UTF-8">
     <title>盒子模型</title>
     <style>
+        /* 定义一个类选择器 demo */
         .demo {
+            /* 设置背景颜色为红色 */
             background-color: red;
-            display: inline-block;
-            border: 5px solid black;
+            /* 设置宽度为 200px */
+            width: 200px;
+            /* 设置高度为 200px */
+            height: 200px;
+            /* 设置边框样式为实线 */
+            border-style: solid;
+            /* 设置上边框宽度为 5px，下边框宽度为 0，左边框宽度为 5px，右边框宽度为 5px */
+            border-width: 5px 0 5px 5px;
+            /* 设置边框颜色为绿色 */
+            border-color: green;
         }
+
+        /* 选择器：选择 class 为 demo2 的元素 */
+        .demo2 {
+            /* 设置背景颜色为蓝色 */
+            background-color: blue;
+            /* 将元素显示为内联块级元素 */
+            display: inline-block;
+            /* 设置元素的边框为 5 像素宽的实线，颜色为红色 */
+            border: 5px solid red;
+            /* 设置元素的内边距为 50 像素 */
+            padding: 50px;
+            /* 设置元素的宽度为 200 像素 */
+            width: 200px;
+            /* 设置元素的高度为 200 像素 */
+            height: 200px;
+            /* 设置元素的外边距为 50 像素 */
+            margin: 50px;
+        }
+
     </style>
 </head>
 <body>
-    <div class="demo">
-        some
-    </div>
-    <div class=""></div>
-
+<!-- 应用 demo 类的 div 元素 -->
+<div class="demo">
+    some
+</div>
+<div class="demo2">
+    div2
+</div>
 </body>
 </html>

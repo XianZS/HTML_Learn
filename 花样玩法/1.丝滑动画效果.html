@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>丝滑动画效果</title>
+    <style>
+        .c1 {
+            background: #ff0081;
+            width: 100px;
+            height: 100px;
+            margin: auto;
+            /* 过渡属性 ： 过渡属性取决于hover中的属性字段 */
+            /* 过渡时间 ： 属性过渡持续时间 */
+            /* 过渡定时函数 ： 属性过渡曲线 ease:正常，steps逐帧动画 https://cubic-bezier.com/ */
+            /* 延迟时间 ： 属性过渡发生的延迟时间 */
+            /* transition : 过渡属性1 过渡时间 过渡定时函数 延迟时间,过渡属性2 过渡时间 过渡定时函数 延迟时间,……*/
+            transition: width 1s ease 0s;
+        }
+
+        .c1:hover {
+            width: 200px;
+        }
+
+        .c2 {
+            background: #ff0081;
+            width: 100px;
+            height: 100px;
+            margin: auto;
+            transition: all 1s ease 0s;
+        }
+
+        .c2:hover {
+            transform: rotate(180deg);
+            background-color: blue;
+            width: 120px;
+            height: 120px;
+        }
+    </style>
+</head>
+<body>
+<div class="c1"></div>
+<div style="margin-bottom: 10px;"></div>
+<div class="c2"></div>
+</body>
+</html>

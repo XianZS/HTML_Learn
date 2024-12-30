@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>DOM控制</title>
+</head>
+<body>
+<h1 id="getId">getId</h1>
+<h1 class="getClass">GetClass</h1>
+<script>
+    let element_getId = document.getElementById("getId");
+    console.log(element_getId);
+    // h1#getId
+    let element_getClass = document.getElementsByClassName("getClass");
+    console.log(element_getClass);
+    // HTMLCollection [h1.getClass]
+    let element_getTagName = document.getElementsByTagName("h1");
+    console.log(element_getTagName);
+    // HTMLCollection(2) [h1#getId, h1.getClass, getId: h1#getId]
+</script>
+</body>
+</html>

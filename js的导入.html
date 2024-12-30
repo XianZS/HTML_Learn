@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>js的导入</title>
+    <!--    最先执行-->
+    <script>
+        console.log("1-hello,head标签的内联样式")
+    </script>
+    <!--    其次执行-->
+    <script src="js/LO.js"></script>
+</head>
+<body>
+<h1>js的导入方式</h1>
+<!--    最后执行-->
+<script>
+    console.log("3-hello,body标签的内联样式")
+</script>
+</body>
+</html>

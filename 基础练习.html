@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>基础练习</title>
+    <!-- 设置表格样式 -->
+    <style>
+        /* 选择表格元素 */
+        table {
+            /* 设置表格宽度为 100% */
+            width: 100%;
+            /* 设置表格边框合并，即表格单元格之间的边框重叠 */
+            border-collapse: collapse;
+        }
+
+        /* 为表格的标题单元格（th）和数据单元格（td）设置样式 */
+        th, td {
+            /* 设置单元格的边框为 1 像素宽的实线，颜色为黑色 */
+            border: 1px solid black;
+            /* 设置单元格内的文本居中对齐 */
+            text-align: center;
+            /* 设置单元格内的内容与单元格边框之间的距离为 5 像素 */
+            padding: 5px;
+            /* 文本居中 */
+        }
+
+        input {
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+<table id="myTable">
+    <tr>
+        <th>name</th>
+        <th>idNumber</th>
+        <th>age</th>
+    </tr>
+    <tr>
+        <td>jom</td>
+        <td>1001</td>
+        <td>21</td>
+    </tr>
+    <tr>
+        <td>kom</td>
+        <td>1002</td>
+        <td>48</td>
+    </tr>
+    <tr>
+        <td>lom</td>
+        <td>1003</td>
+        <td>97</td>
+    </tr>
+</table>
+<button style="margin-top: 5px;margin-bottom: 5px;" onclick="addRow()">新增</button>
+<table>
+    <tr>
+        <th>newName</th>
+        <th>newIdNumber</th>
+        <th>newAge</th>
+    </tr>
+    <tr>
+        <td><input type="text" id="newName"></td>
+        <td><input type="text" id="newIdNumber"></td>
+        <td><input type="text" id="newAge"></td>
+    </tr>
+</table>
+<script src="js/add.js"></script>
+</body>
+</html>
